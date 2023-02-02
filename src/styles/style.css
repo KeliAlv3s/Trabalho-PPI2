@@ -69,85 +69,46 @@ nav a{
 
 .frase{
     text-align: center;
-    padding-top: 3em;
-    padding-bottom: 3em;
+    height: 92vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blue);
+    
 }
 
 .frase h1{
     font-weight: 700;
+    color: var(--white);
 }
 
 .frase h3{
     font-weight: 400;
+    color: var(--babyPink);
 }
 
-main h4{
-    font-size: 1.5em;
-    font-weight: 500;
-    text-align: center;
+.frase button a{
+    text-decoration: none;
+    color: var(--blue);
 }
 
-.products{
-    height: 40vh;
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
-    display: flex;
-    flex-direction: row;
-
-}
-
-.product-container{
-    height: 100%;
-    width: 40%;
-    background-color: white ;
-
-    border: 0.5px solid;
-    border-radius: 50px;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: column;
-
-    margin-right: 2em;
-}
-
-.container-main{
-    height: 80%;
-    width: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.product-img img{
-    height: 20vh;
-}
-.container-footer{
-    height: 30%;
-    display: flex;
-}
-.product-desc{
-    font-size: 1.5em;
-}
-
-.product-price{
-    font-size: 2.5em;
-    text-align: center;
-}
-
-.product-bttn button{
-    width: 100%;
+.frase button{
+    text-transform: capitalize;
+    cursor: pointer;
 
     margin-top: 1em;
 
     padding: 1.5em 4em;
+    border: 0;
+    border-radius: 50px;
 
-    background-color: var(--blue);
-    color: var(--white);
-    border: 1px;
-    border-radius: 25px;
+    font-weight: 700;
+    font-size: 1em;
 
-    cursor: pointer;
+    transition: all 50ms;
+}
 
+.frase button:hover{
+    opacity: 0.7;
 }
