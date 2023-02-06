@@ -1,36 +1,69 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TWH Branding</title>
-    <link rel="stylesheet" href="src/styles/style.css">
-</head>
-<body>
-    <nav>
-        <div class="menu">
-            <div class="menu-bar"></div>
-            <div class="menu-bar"></div>
-            <div class="menu-bar"></div>
-        </div>
-        <div class="logo">
-            <h2>TWH Branding</h2>
-        </div>
-        <ul class="nav-list">
-            <li class="nav-item"><a href="#" class="active">Home</a></li>
-            <li class="nav-item"><a href="#">Tech</a></li>
-            <li class="nav-item"><a href="#">Wear</a></li>
-            <li class="nav-item"><a href="#">Furniture</a></li>
+<html>
+  <head>
+    <title>IFNews - Notícias do mundo todo</title>
+    <link rel="stylesheet" type="text/css" href="src/style.css">
+  </head>
+  <body>
+    <header>
+      <h1>IFNews</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Notícias</a></li>
+          <li><a href="#">Tempo</a></li>
+          <li><a href="#">Esportes</a></li>
+          <li><a href="#">Contato</a></li>
         </ul>
-    </nav>
+      </nav>
+    </header>
     <main>
-        <div class="frase"> 
-            <h1>The WareHouse Branding</h1>
-            <h3><i>"Sua solução em Marketplace"</i></h3>
-            <button><a href="#">faça parte do nosso time!</a></button>
-        </div>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <h2>Últimas notícias</h2>
+      <section id="news-section">
+        <article>
+          <img src="src/assets/destaque.jpg" alt="Destaque">
+          <div class="text-wrapper">
+            <h3>Estudantes do IFSUL Câmpus Gravataí são premiados em 
+              duas mostras científicas</h3>
+            <p>Como já é tradição no IFSul Câmpus Gravataí, este ano 
+              estudantes do ensino médio técnico apresentaram seus 
+              trabalhos em três mostras científicas: a MOSTRATEC, a 
+              IFCITEC e a MOCITEC</p>
+          </div>
+        </article>
+        <article>
+          <img src="src/assets/seletivo.jpg" alt="Processo Seletivo IFsul">
+          <div class="text-wrapper">
+            <h3>Últimos dias de inscrições do processo seletivo para 
+              cursos de graduação do IFSul</h3>
+            <p>CA seleção conta com mais de 400 vagas. Inscrições se 
+              encerram no dia 18 de novembro, às 19h</p>
+          </div>
+        </article>
+        <article>
+          <img src="src/assets/participe.jpg" alt="Participe">
+          <div class="text-wrapper">
+            <h3>Comunidade acadêmica é convidada a colaborar com a revisão da 
+              Política de Sustentabilidade Ambiental do IFSul</h3>
+            <p>Servidores e estudantes também podem ajudar a decidir qual será 
+              a temática do 2º Fórum Ambiental do IFSul</p>
+          </div>
+        </article>
+        <article>
+          <img src="src/assets/edital.jpg" alt="Edital">
+          <div class="text-wrapper">
+            <h3>Seleção para Assistente à Docência</h3>
+            <p>A Coordenadoria de Tecnologia Educacional (CTE) 
+            da UFSM, juntamente com a Coordenação do Programa 
+            Universidade Aberta do Brasil, (UAB)  torna público a 
+            abertura das inscrições do Processo Seletivo para 
+            Assistente à Docência na condição de bolsista vinculado 
+            ao Programa UAB</p>
+          </div>
+        </article>
+      </section>
     </main>
-</body>
+    <footer>
+      <p>Todos os direitos reservados &copy; IFNews 2023</p>
+    </footer>
+    <script src="src/main.js"></script>
+  </body>
 </html>
