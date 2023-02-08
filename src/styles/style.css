@@ -14,7 +14,7 @@ body {
 
     position: fixed;
     top: 0;
-
+    height: 4vh;
     width: 100%;
   }
   
@@ -43,6 +43,12 @@ body {
     padding: 20px;
   }
 
+  main h2{
+    margin-top: 10vh;
+    margin-left: 0;
+    padding: 1em;
+  }
+
   #news-section article{
     display: flex;
     flex-direction: row;
@@ -53,6 +59,7 @@ body {
     margin-bottom: 2em;
 
     width: 60%;
+
     
   }
 
