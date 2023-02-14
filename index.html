@@ -1,72 +1,40 @@
-<html>
-  <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IFNews - Notícias do mundo todo</title>
-    <link rel="stylesheet" type="text/css" href="src/styles/style.css">
-  </head>
-  <body>
-    <header>
-      <h1>IFNews</h1>
-      <nav>
-        <ul>
-          <li><a href="#">Notícias</a></li>
-          <li><a href="./src/pages/tempo.html">Tempo</a></li>
-          <li><a href="./src/pages/esportes.html">Esportes</a></li>
-          <li><a href="#">Contato</a></li>
-        </ul>
-      </nav>
-    </header>
+    <title>Document</title>
+</head>
+<body>
     <main>
-      <h2>Últimas notícias</h2>
-      <section id="news-section">
-        <article>
-          <img src="src/assets/destaque.jpg" alt="Destaque">
-          <div class="text-wrapper">
-            <h3>Estudantes do IFSUL Câmpus Gravataí são premiados em 
-              duas mostras científicas</h3>
-            <p>Como já é tradição no IFSul Câmpus Gravataí, este ano 
-              estudantes do ensino médio técnico apresentaram seus 
-              trabalhos em três mostras científicas: a MOSTRATEC, a 
-              IFCITEC e a MOCITEC</p>
-          </div>
-        </article>
-        <article>
-          <img src="src/assets/seletivo.jpg" alt="Processo Seletivo IFsul">
-          <div class="text-wrapper">
-            <h3>Últimos dias de inscrições do processo seletivo para 
-              cursos de graduação do IFSul</h3>
-            <p>CA seleção conta com mais de 400 vagas. Inscrições se 
-              encerram no dia 18 de novembro, às 19h</p>
-          </div>
-        </article>
-        <article>
-          <img src="src/assets/participe.jpg" alt="Participe">
-          <div class="text-wrapper">
-            <h3>Comunidade acadêmica é convidada a colaborar com a revisão da 
-              Política de Sustentabilidade Ambiental do IFSul</h3>
-            <p>Servidores e estudantes também podem ajudar a decidir qual será 
-              a temática do 2º Fórum Ambiental do IFSul</p>
-          </div>
-        </article>
-        <article>
-          <img src="src/assets/edital.jpg" alt="Edital">
-          <div class="text-wrapper">
-            <h3>Seleção para Assistente à Docência</h3>
-            <p>A Coordenadoria de Tecnologia Educacional (CTE) 
-            da UFSM, juntamente com a Coordenação do Programa 
-            Universidade Aberta do Brasil, (UAB)  torna público a 
-            abertura das inscrições do Processo Seletivo para 
-            Assistente à Docência na condição de bolsista vinculado 
-            ao Programa UAB</p>
-          </div>
-        </article>
-      </section>
+        <h1>Bem Vindo ao IFNews!</h1>
+        <h3>Sua fonte de informação sobre o IFSul!</h3>
+        
+        
+        <section id="campus-select">
+            <label>
+              Selecione seu Câmpus
+            </label>
+              <div class="input">
+                <select>
+                  <option value="Pelotas">Pelotas</option>
+                  <option value="Bage">Bagé</option>
+                  <option value="Camaqua">Camaquã</option>
+                  <option value="Charqueadas">Charqueadas</option>
+                  <option value="Gravatai">Gravataí</option>
+                  <option value="Jaguarao">Jaguarão</option>
+                  <option value="Lajeado">Lajeado</option>
+                  <option value="Novo Hamburgo">Novo Hamburgo</option>
+                  <option value="Santana do Livramento">Santana do Livramento</option>
+                  <option value="Sapiranga">Sapiranga</option>
+                  <option value="Sapucaia do Sul">Sapucaia do Sul</option>
+                  <option value="Venancio Aires">Venâncio Aires</option>
+                </select>
+              <button>Pesquisar</button>
+              </div>
+          </section>
     </main>
-    <footer>
-      <p>Todos os direitos reservados &copy; IFNews 2023</p>
-    </footer>
     <script src="src/js/main.js"></script>
-  </body>
+</body>
 </html>

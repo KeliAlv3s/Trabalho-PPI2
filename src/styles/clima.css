@@ -9,7 +9,7 @@
     justify-content: top;
 }
 
-#weather-select{
+#campus-select{
     background-color: lightgreen;
     width: 60%;
     height: 40%;
@@ -20,7 +20,7 @@
     justify-content: center;
 }
 
-#weather-select label{
+#campus-select label{
     background-color: lightseagreen;
 
     font-size: 2em;
