@@ -4,85 +4,100 @@ body {
     padding: 0;
   }
   
-  header {
-    background-color: #333;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
+header {
+  background-color: #004d25;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  height: 5vh;
+  width: 99%;
+}
 
-    position: fixed;
-    top: 0;
-    height: 4vh;
-    width: 100%;
-  }
+header h1 {
+  margin: 0;
+}
+
+header h1 a{
+  text-decoration: none;
+  color: #fff;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 20px;
+}
+nav a:hover{
+  opacity: 0.7;
+}
+
+main {
+  height: 90vh;
+}
+main h2{
+  margin-left: 0;
+  padding: 1em;
+}
+#news-section article{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1em;
+  margin-bottom: 2em;
+  width: 60%;
   
-  header h1 {
-    margin: 0;
-  }
+  transition: all 0.5s;
+}
 
-  header h1 a{
-    text-decoration: none;
-    color: #fff;
-  }
+#news-section article h3{
+  transition: all 0.3s;
+}
 
-  nav ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav a {
-    color: #fff;
-    text-decoration: none;
-    padding: 20px;
-  }
+#news-section article img{
+  height: 100%;
+  transition: all 0.3s ease-in-out;
+}
 
-  nav a:hover{
-    opacity: 0.7;
-  }
-  
-  main {
-    padding: 20px;
-  }
+.text-wrapper{
+  padding-left: 2em;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
 
-  main h2{
-    margin-top: 10vh;
-    margin-left: 0;
-    padding: 1em;
-  }
+footer {
+  background-color: #004d25;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  height: 5vh;
+}
 
-  #news-section article{
-    display: flex;
-    flex-direction: row;
-
-    align-items: center;
-
-    padding: 1em;
-    margin-bottom: 2em;
-
-    width: 60%;
-
-    
-  }
-
-  #news-section article img{
+@media(max-width: 768px){
+  main{
     height: 100%;
   }
 
-  .text-wrapper{
-    padding-left: 2em;
-    display: flex;
+  #news-section{
+    width: 100%;
+  }
+
+  #news-section article{
     flex-direction: column;
-    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
   }
-  
-  footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
+
+  footer{
+    display: none;
   }
-  
+}

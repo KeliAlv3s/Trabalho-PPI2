@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IFNews - Notícias do mundo todo</title>
     <link rel="stylesheet" type="text/css" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/contact.css">
   </head>
   <body>
     <header>
@@ -18,12 +19,33 @@
       </nav>
     </header>
     <main>
-      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-      <h2>Entre Em Contato!</h2>
+      <div class="form-wrapper">
+        <h2>Entre Em Contato!</h2>
+        <form action="#" method="get">
+          <label><b>Nome: </b><input type="text" minlength="3" maxlength="50" placeholder="Joaquim da Silva Pinto" required></label>
+          <label><b>E-mail: </b><input type="email" placeholder="joaquimpinto@hotmail.com" required></label>
+          <label><b>Telefone </b>(WhatsApp): <input type="tel" placeholder="(XX)99999-9999"></label>
+          <label class="radio-wrapper">
+            <b>Motivo do Contato:</b>
+              <label>Erro no site <input type="radio" name="contato" id="1"></label>
+              <label>Sugestão de Melhoria <input type="radio" name="contato" id="2"></label>
+          </label>
+          <label class="msg-wrapper">
+            <b>Sua Mensagem:</b>
+            <textarea name="msg" id="msg" cols="30" rows="3"></textarea>
+          </label>
+          <label class="check-wrapper">
+            <b>Feedback:</b>
+            <label><input type="checkbox" name="contato" id="1"> Desejo ser contatado por E-Mail</label>
+            <label><input type="checkbox" name="contato" id="2"> Desejo ser contatado por WhatsApp</label>
+          </label>
+          <button>Enviar</button>
+        </form>
+      </div>
     </main>
     <footer>
       <p>Todos os direitos reservados &copy; IFNews 2023</p>
     </footer>
-    <script src="src/js/main.js"></script>
+    <script src="../js/contact.js"></script>
   </body>
 </html>

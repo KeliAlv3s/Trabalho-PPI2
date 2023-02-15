@@ -1,13 +1,34 @@
 const newsSection = document.querySelector("#news-section");
 const articles = newsSection.querySelectorAll("article");
+const titles = newsSection.querySelectorAll('h3')
+const images = newsSection.querySelectorAll('img')
 
-for (let i = 0; i < articles.length; i++) {
-  articles[i].addEventListener("mouseover", function () {
-    this.style.backgroundColor = "lightgrey";
-  });
+articles.forEach(article=>{
+  article.addEventListener('mouseover', ()=>{
+    article.style.backgroundColor = "lightgray"
+  })
+  
+  article.addEventListener('mouseout', ()=>{
+    article.style.backgroundColor = ""
+  })
+})
 
-  articles[i].addEventListener("mouseout", function () {
-    this.style.backgroundColor = "";
-  });
-}
+titles.forEach(title=>{
+  title.addEventListener("mouseover", ()=>{
+    title.style.color = "#8b0000"
+  })
 
+  title.addEventListener("mouseout", ()=>{
+    title.style.color = ""
+  })
+})
+
+images.forEach(img=>{
+  img.addEventListener('mouseover', ()=>{
+    img.style.transform = 'scale(1.1)'
+  })
+  
+  img.addEventListener('mouseout', ()=>{
+    img.style.transform = ''
+  })
+})

@@ -9,12 +9,13 @@ search.addEventListener('click', ()=>{
         .then(data => {
             const weatherSection = document.querySelector("#weather-section");
             const weatherInfo = `
-                <p>Cidade: ${data.name}</p>
-                <p>Temperatura: ${data.main.temp} °C</p>
-                <p>Descrição: ${data.weather[0].description}</p>
+                <p><b>Câmpus:</b> ${data.name}</p>
+                <p><b>Temperatura:</b> ${data.main.temp} °C</p>
+                <p><b>Descrição:</b> ${data.weather[0].description}</p>
     `;
     weatherSection.innerHTML = weatherInfo;
   });
 
+  document.querySelector('#weather-section').style.display = 'flex'
 
 })
