@@ -3,6 +3,7 @@ const articles = newsSection.querySelectorAll("article");
 const titles = newsSection.querySelectorAll('h3')
 const images = newsSection.querySelectorAll('img')
 
+//muda backgroundColor da notícia
 articles.forEach(article=>{
   article.addEventListener('mouseover', ()=>{
     article.style.backgroundColor = "lightgray"
@@ -13,6 +14,7 @@ articles.forEach(article=>{
   })
 })
 
+//muda backgroundColor do título da notícia
 titles.forEach(title=>{
   title.addEventListener("mouseover", ()=>{
     title.style.color = "#8b0000"
@@ -23,6 +25,7 @@ titles.forEach(title=>{
   })
 })
 
+//Da Ênfase a imagem da notícia
 images.forEach(img=>{
   img.addEventListener('mouseover', ()=>{
     img.style.transform = 'scale(1.1)'
