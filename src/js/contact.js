@@ -3,19 +3,35 @@ const email = document.getElementById('email')
 const wpp = document.getElementById('wpp')
 const inputs = document.querySelectorAll('input')
 const form = document.querySelector('form')
-
-form.addEventListener('invalid', ()=>{
-    
-})
+const text = document.querySelector('textarea')
 
 inputs.forEach(input=>{
     input.addEventListener('focus', ()=>{
-        input.style.borderColor = 'darkgreen'
+        input.style.borderColor = 'black'
     })
-    
+
     input.addEventListener('focusout', ()=>{
-        input.style.borderColor = ''
+        if(!input.value){
+            input.style.borderColor = ''
+        }
     })
+
+    input.addEventListener('blur', ()=>{
+        if(!input.checkValidity()){
+            input.style.borderColor = 'red'
+        }else{
+            input.style.borderColor = 'darkgreen'
+        }
+    })
+
+})
+
+
+text.addEventListener('input', ()=>{
+    text.style.height = '8em'
+    if(!text.value){
+        text.style.height = '4em'
+    }
 })
 
 email.addEventListener('mouseover', ()=>{
@@ -39,5 +55,5 @@ bttn.addEventListener('click', ()=>{
     if(form.checkValidity(true)){
         alert('Obrigado pelo feedback!')
     }
-
 })
+
