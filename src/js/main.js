@@ -1,5 +1,5 @@
-import {select} from 'clima.js'
+const bttn = document.querySelector('button')
 
-document.querySelector('button').addEventListener('click', ()=>{
-  console.log('foi')
+bttn.addEventListener('click', ()=>{
+  
 })

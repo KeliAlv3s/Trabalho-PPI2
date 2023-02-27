@@ -32,6 +32,10 @@ input{
     border-right: 0;
 }
 
+textarea:focus ,input:focus{
+    outline: none;
+}
+
 .radio-wrapper{
     display: flex;
     flex-direction: column;
@@ -45,6 +49,7 @@ input{
 
 textarea{
     margin-top: 0.5em;
+    resize: none;
 }
 
 .check-wrapper{

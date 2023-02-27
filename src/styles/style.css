@@ -2,6 +2,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    width: 100vw;
+    overflow-x: hidden;
   }
   
 header {
@@ -12,7 +14,7 @@ header {
   justify-content: space-between;
   padding: 20px;
   height: 5vh;
-  width: 99%;
+  width: 100%;
 }
 
 header h1 {
@@ -29,6 +31,7 @@ nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  margin-right: 2em;
 }
 
 nav a {
@@ -85,6 +88,11 @@ footer {
 @media(max-width: 768px){
   main{
     height: 100%;
+    width: 100vw;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   #news-section{
@@ -95,6 +103,7 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 80vw;
   }
 
   footer{
